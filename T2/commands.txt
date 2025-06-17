@@ -1,0 +1,7 @@
+make ucx ARCH=riscv/hf-riscv-e
+make tdes_driver
+cp build/target/code.txt ../hf-risc/software/code.txt
+
+GHDL, diretorio hf-risc/sim/rv32e_basic
+make ghdl-vcd TIME=10ms
+make wave-vcd
